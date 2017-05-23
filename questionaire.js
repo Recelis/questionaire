@@ -2,6 +2,7 @@
 var data = {
     counter:0,
     questions:['are you sure?','are you ready to begin?', 'do you like dogs?', 'do you like cats?'],
+    answers:[],
     changeCounter:function(id){
         if (id === 'yes'){
             data.counter++;
@@ -39,7 +40,7 @@ var view = {
         return id;
     },
     updateText: function(){
-        document.getElementById('textContent').innerHTML = data.questions[data.counter]; // this hardcoded textcontent stinks
+        document.getElementById('textQuestions').innerHTML = data.questions[data.counter]; // this hardcoded textcontent stinks
     }
 
 };
