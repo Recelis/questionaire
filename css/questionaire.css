@@ -1,8 +1,25 @@
-#image{
+body{
 
 }
 
-#textContent{
+#header{
+    z-index: 100;
+}
+
+#image{
+    background-color:red;
+    margin:0px;
+    padding:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+}
+
+.description{
+
+}
+
+#textQuestions{
     
 }
 

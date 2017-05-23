@@ -101,7 +101,8 @@ var view = {
     createButtons: function(id, parent){ 
         var newButton = document.createElement('button');
         newButton.id = id;
-        newButton.textContent = id; 
+        newButton.textContent = id;
+        newButton.classList.add('btn'); 
         document.getElementById(parent).appendChild(newButton);
         if (id === 'no'){
             document.getElementById(id).style.display = 'none';// hide button initially, please refactor this
