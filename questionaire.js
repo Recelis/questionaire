@@ -1,6 +1,6 @@
 
 var data = {
-    counter:0,
+    counter:-1,
     noCounts: 0,
     questions:[
         'did you make your bed today?',
@@ -39,13 +39,12 @@ var data = {
     },
     returnText:function(id){
         if (id === 'yes'){
-            data.counter++;
-            if (data.counter > data.questions.length){
+            if (data.counter >= data.questions.length-1){
                 // save noCount to external file with date.
-
                 return data.suggestions.last;
+            } else{
+                data.counter++;
             }
-            console.log(data.counter);
             return data.questions[data.counter];
         } else{
             data.noCounts++;
@@ -58,12 +57,12 @@ var data = {
 
 var handler = {
     // button listeners
-    buttonCreateListeners: function(id){
-        document.getElementById('no').addEventListener("click",handler.returnText(id));
-    },
     changeQuestion:function(id){
         var message = data.returnText(id);
         view.updateText(message);// update view        
+    },
+    hideNoButton:function(){
+
     }
 };
 
