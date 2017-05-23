@@ -59,7 +59,7 @@ var data = {
             'Sleeping early and waking up early is extremely important to having good health and being mentally strong for the next day.',
             'Gratefulness to others is a key to having a good temperament, and makes life a lot more enjoyable and rewarding. Try to thank people internally and externally.',
         ],
-        last: 'looks like you are on the right track! Keep moving forward, and if you run into any difficulties, just come back here!<br>Your workflow analysis will be presented soon!',
+        last: 'looks like you are on the right track! Keep moving forward, and if you run into any difficulties, just come back here!Your workflow analysis will be presented soon!',
     },
     returnText:function(id){
         if (id === 'yes'){
@@ -103,6 +103,7 @@ var view = {
         newButton.id = id;
         newButton.textContent = id;
         newButton.classList.add('btn'); 
+        newButton.classList.add('btn-primary');
         document.getElementById(parent).appendChild(newButton);
         if (id === 'no'){
             document.getElementById(id).style.display = 'none';// hide button initially, please refactor this
@@ -113,7 +114,7 @@ var view = {
         return id;
     },
     updateText: function(message){
-        document.getElementById('textQuestions').innerHTML = message; // this hardcoded textcontent stinks
+        document.getElementById('content').textContent = message; // this hardcoded textcontent stinks
     },
     createNoGraph: function(){
 

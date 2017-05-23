@@ -3,26 +3,40 @@ body{
 }
 
 #header{
+    font-family: 'Raleway', sans-serif;
     z-index: 100;
 }
 
-#image{
-    background-color:red;
+.images{
     margin:0px;
     padding:0px;
     height: 100%;
     width: 100%;
     z-index: -100;
+    position:relative;
+}
+
+jumbotron{
+    position:absolute;
+    top: 40%;
+    left:25%;
+    right:25%;
+    text-align:center;
+    z-index:100;
 }
 
 .description{
-
+    text-align:center;
 }
 
-#textQuestions{
-    
+#content{
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary{
+    font-family: 'Raleway', sans-serif;
 }
 
 #copyright{
-
+    font-family: 'Raleway', sans-serif;
 }
