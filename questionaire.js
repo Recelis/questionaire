@@ -1,8 +1,36 @@
 
 var data = {
     counter:0,
-    questions:['are you sure?','are you ready to begin?', 'do you like dogs?', 'do you like cats?'],
-    answers:[],
+    questions:[
+        'did you make your bed today?',
+        'is your desk neat and tidy?',
+        'do you have a plan for today?',
+        'do you have a plan for tomorrow?',
+        'is your calendar organised?',
+        'do you have a long term plan?',
+        'does your diary or to-do-list reflect your long-term plan?', 
+        'are you procrastinating on a big complicated job?',
+        'are you procrastinating on a scary task?',
+        'do you have too much on your plate?',
+        'did you do at least 4 hours of work before taking a break today?',
+        'are your temptations easily available to you?',
+        'are you eating clean?',
+        'did you do your base minimal exercise today?',
+        'was the last time you had contact with friends and external world less than 3 days?',
+        'have you made a github commit today?',
+        'did you read any news articles today?', // change no answer
+        'did you take notes on the news articles?',
+        'did you read any books today?',
+        'did you take time to think about what you read today?',
+        'did any book or news article or video make you unnecessarily upset?',
+        'did you play any video games today?',
+        'did you go to sleep late last night?',
+        'do you feel grateful to anyone?'],
+    answers:[
+        {no:'go and change this. Ready to move on?',
+        }
+    ],
+    suggestions:[],
     changeCounter:function(id){
         if (id === 'yes'){
             data.counter++;
