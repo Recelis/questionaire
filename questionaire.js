@@ -27,26 +27,31 @@ var data = {
         'did you refrain from playing any video games today?',
         'did you go to sleep early last night?',
         'do you feel grateful to anyone?'],
-    answers:[
-        {no:'change your no to a yes and carry on. Ready to move on?',
-        }
-    ],
+    answers:{
+        no:'change your no to a yes and carry on. Ready to move on?',
+        
+    },
     suggestions:{
         advice: [
 
         ],
         last: 'looks like you are on the right track! Keep moving forward, and if you run into any difficulties, just come back here!',
     },
-    changeCounter:function(id){
+    returnText:function(id){
         if (id === 'yes'){
             data.counter++;
-            if (data.counter > data.questions.length)
-            return data.counter;
+            if (data.counter > data.questions.length){
+                // save noCount to external file with date.
+
+                return data.suggestions.last;
+            }
+            console.log(data.counter);
+            return data.questions[data.counter];
         } else{
             data.noCounts++;
-            data.counter--;
-            if (data.counter < 0) return data.counter = data.questions.length -1;
-            return data.counter;
+            data.counter--; // so that you bounce back to where you were
+            console.log(data.counter);
+            return data.answers.no;
         }
     }
 };
@@ -54,11 +59,11 @@ var data = {
 var handler = {
     // button listeners
     buttonCreateListeners: function(id){
-        document.getElementById('no').addEventListener("click",handler.changeQuestion(id));
+        document.getElementById('no').addEventListener("click",handler.returnText(id));
     },
     changeQuestion:function(id){
-        data.changeCounter(id);
-        view.updateText();// update view
+        var message = data.returnText(id);
+        view.updateText(message);// update view        
     }
 };
 
@@ -74,9 +79,15 @@ var view = {
         };
         return id;
     },
-    updateText: function(){
-        document.getElementById('textQuestions').innerHTML = data.questions[data.counter]; // this hardcoded textcontent stinks
-    }
+    updateText: function(message){
+        document.getElementById('textQuestions').innerHTML = message; // this hardcoded textcontent stinks
+    },
+    createNoGraph: function(){
+
+    },
+    createMaxNoTable: function(){
+
+    },
 
 };
 
@@ -84,9 +95,6 @@ var view = {
 document.addEventListener('DOMContentLoaded', function(){
     // add buttons to placeButton
     view.createButtons('yes', 'placeButton');
-    view.createButtons('no', 'placeButton');
-    // create listeners for buttons
-    // handler.buttonCreateListeners('yes');
-    
+    view.createButtons('no', 'placeButton');    
 });
 
