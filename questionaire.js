@@ -59,11 +59,13 @@ var handler = {
     // button listeners
     changeQuestion:function(id){
         var message = data.returnText(id);
-        view.updateText(message);// update view        
+        view.updateText(message);// update view  
+        if (id === 'no'){
+            document.getElementById(id).style.display = 'none';// hide button
+        } else{
+            document.getElementById('no').style.display = '';
+        }     
     },
-    hideNoButton:function(){
-
-    }
 };
 
 var view = {
