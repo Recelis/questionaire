@@ -59,12 +59,17 @@ var data = {
             'Sleeping early and waking up early is extremely important to having good health and being mentally strong for the next day.',
             'Gratefulness to others is a key to having a good temperament, and makes life a lot more enjoyable and rewarding. Try to thank people internally and externally.',
         ],
-        last: 'looks like you are on the right track! Keep moving forward, and if you run into any difficulties, just come back here!',
+        last: 'looks like you are on the right track! Keep moving forward, and if you run into any difficulties, just come back here!<br>Your workflow analysis will be presented soon!',
     },
     returnText:function(id){
         if (id === 'yes'){
             if (data.counter >= data.questions.length-1){
                 // save noCount to external file with date.
+
+                // hide buttons
+                document.getElementById('yes').style.display = 'none';
+                document.getElementById('no').style.display = 'none';
+                
                 return data.suggestions.last;
             } else{
                 data.counter++;
@@ -73,8 +78,6 @@ var data = {
         } else{
             data.noCounts++;
             data.counter--; // so that you bounce back to where you were
-            console.log(data.counter);
-            console.log(data.suggestions.advice[data.counter+1]);
             return data.suggestions.advice[data.counter+1] +' '+ data.answers.no;
         }
     }
@@ -83,13 +86,13 @@ var data = {
 var handler = {
     // button listeners
     changeQuestion:function(id){
-        var message = data.returnText(id);
-        view.updateText(message);// update view  
         if (id === 'no'){
             document.getElementById(id).style.display = 'none';// hide button
         } else{
             document.getElementById('no').style.display = '';
-        }     
+        }  
+        var message = data.returnText(id);
+        view.updateText(message);// update view  
     },
 };
 
