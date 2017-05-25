@@ -14,7 +14,7 @@ var data = {
         'did you avoid procrastinating on a scary task?',
         'did you get through a setback?',
         'did you take a step back from a setback and look at a bigger picture?',
-        'are you simplified so that you don\'t too much on your plate?',
+        'are you simplified so that you don\'t have too much on your plate?',
         'did you do at least 4 hours of work before taking a break today?',
         'have you got rid of easily accessible temptations?',
         'are you eating clean?',
@@ -49,6 +49,7 @@ var data = {
             'Try to maximise your achievements of the day before you take your first break. Breaks are times when you can get distracted and lose momentum. Try to do a fairly big amount of work before you take that first break.',
             'Distractions are everywhere, if you can clear out threats of distractions. Blocking out youtube, wiping your caches, you will be less inclined to be tempted to waste time. Life is pretty short.',
             'Your health is extremely important, and eating well is a major part in living healthily. Stick away from junk food, high fat foods and sweets. Try to eat as much vegetables as possible.',
+            'Eating well is only half of the story, exercise everyday and you\'ll be on your way to feeling sprightly!',
             'Remember the PERMA model? Good relationships with friends and family are very important to keeping you happy and content with your life. Don\'t forget that.',
             'You\'re trying to become a software developer one day. And a good one too. So you\'ll need to practise. All the time, every day.',
             'Reading the news is very important, to keeping up with the things of interest and with the world. But remember to make sure that you read only if you are currently tracking what you are reading. Don\'t make the mistake of reading the news for the fun of it.',
@@ -59,7 +60,7 @@ var data = {
             'Sleeping early and waking up early is extremely important to having good health and being mentally strong for the next day.',
             'Gratefulness to others is a key to having a good temperament, and makes life a lot more enjoyable and rewarding. Try to thank people internally and externally.',
         ],
-        last: 'looks like you are on the right track! Keep moving forward, and if you run into any difficulties, just come back here!Your workflow analysis will be presented soon!',
+        last: 'Looks like you are on the right track! Keep moving forward, and if you run into any difficulties, just come back here! Your workflow analysis will be presented soon!',
     },
     returnText:function(id){
         if (id === 'yes'){
