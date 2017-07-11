@@ -15,7 +15,7 @@ var data = {
         'did you get through a setback?',
         'did you take a step back from a setback and look at a bigger picture?',
         'are you simplified so that you don\'t have too much on your plate?',
-        'did you do at least 4 hours of work before taking a break today?',
+        'did you do at least 1 hours of work before taking a break today?',
         'have you got rid of easily accessible temptations?',
         'are you eating clean?',
         'did you do your base minimal exercise today?',
@@ -26,7 +26,7 @@ var data = {
         'did you take time to think about what you read today?',
         'did you control your emotions if any book or news article or video make you unnecessarily upset today?',
         'did you refrain from playing any video games today?',
-        'did you go to sleep early last night?',
+        'did you go to sleep early last night? Is your room clear of all electronics except Ultrabuddy?',
         'do you feel grateful to anyone?'],
     answers:{
         no:'Change your no to a yes and carry on. Ready to move on?',
