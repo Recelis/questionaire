@@ -27,6 +27,7 @@ var data = {
         'did you control your emotions if any book or news article or video make you unnecessarily upset today?',
         'did you refrain from playing any video games today?',
         'did you go to sleep early last night? Is your room clear of all electronics except Ultrabuddy?',
+        'have you made one change to make your life better?',
         'do you feel grateful to anyone?'],
     answers:{
         no:'Change your no to a yes and carry on. Ready to move on?',
