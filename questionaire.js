@@ -19,6 +19,8 @@ var data = {
         'did you read any books today?',
 
         'did you feel any self-pity for yourself today?',
+        'have you made one change to make your life better?',
+
         'do you feel grateful to anyone?'],
     answers:{
         no:'Change your no to a yes and carry on. Ready to move on?',
@@ -39,6 +41,7 @@ var data = {
             'You\'re trying to become a software developer one day. And a good one too. So you\'ll need to practise. All the time, every day.',
             'Reading books is extremely important to furthering your knowledge base, and helping you become a faster learner and smarter person.',
             'There\'s a lot of media that makes a lot of money off the belief that you are not living a great life. Remember as long as you\'re alive, you\'re pretty lucky. Believe in yourself, and you can conquer anything.',
+            'When you start making changes to your life to make it better, it slowly adds up, and sooner or later, you\'ve got a wonderful life. Plus, you\'ll become more optimistic and positive about life in general. Double Whammy!',
             'Gratefulness to others is a key to having a good temperament, and makes life a lot more enjoyable and rewarding. Try to thank people internally and externally.',
         ],
         last: 'Looks like you\'re doing well! Life\'s good, keep moving forward, and if you run into any difficulties, just come back here! Good luck with tomorrow!',
