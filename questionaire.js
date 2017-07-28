@@ -18,7 +18,7 @@ var data = {
         'have you made a github commit today?',
         'did you read any books today?',
 
-        'did you feel any self-pity for yourself today?',
+        'did you avoid feeling any self-pity for yourself today?',
         'have you made one change to make your life better?',
 
         'do you feel grateful to anyone?'],
