@@ -13,7 +13,7 @@ var data = {
         'are you simplified so that you are only doing at most three projects?',
         'are you living healthy, eating well, sleeping well, and exercising well?',
 
-        'was the last time you had contact with friends and external world less than 3 days?',
+        'did you have any contact with friends and external world today?',
 
         'have you made a github commit today?',
         'did you read any books today?',
