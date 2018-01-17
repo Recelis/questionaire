@@ -40,3 +40,11 @@ jumbotron{
 #copyright{
     font-family: 'Raleway', sans-serif;
 }
+
+.github{
+    width:50px;
+    height:50px;
+    border:solid 0px transparent;
+    background-color:transparent;
+  }
+  
